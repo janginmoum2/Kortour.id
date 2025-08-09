@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KORTOUR</title>
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --accent: #0a84ff;
+      --text: #111827;
+      --muted: #6b7280;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial;
+      background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 100%);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .container {
+      max-width: 760px;
+      margin: 28px auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    .logo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 8px;
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: 5px solid black;
+      box-shadow: 0 6px 18px rgba(10,20,60,0.06);
+    }
+    h1 {
+      margin: 6px 0 4px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;      /* 아이콘 + 글씨 세로 가운데 */
+      justify-content: center;  /* 전체 가운데 정렬 */
+      gap: 8px;                  /* 아이콘과 글씨 간격 */
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: var(--card);
+      color: var(--text);
+      text-align: center;        /* 글씨 중앙 정렬 */
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(12,20,60,0.06);
+      border: 1px solid rgba(15,23,42,0.04);
+      font-weight: 600;
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .btn img {
+      height: 20px;
+    }
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(12,20,60,0.10);
+    }
+    footer {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      .container { padding: 16px; }
+      h1 { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="logo" src="https://i.ibb.co/fdzg15qL/kortour.jpg" alt="KORTOUR 로고">
+      <h1>KORTOUR</h1>
+    </header>
+
+    <div class="links">
+      <a class="btn" href="http://telegram.me/kortour" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">신현권 대표(타슈켄트)</a>
+      <a class="btn" href="http://telegram.me/kortour_korea" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">정태범 과장(서울)</a>
+      <a class="btn" href="http://telegram.me/Janna8113" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">Li Janna</a>
+      <a class="btn" href="http://telegram.me/Kor_tour" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">VISA</a>
+      <a class="btn" href="https://t.me/kortour_visa" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">VISA 단체</a>
+      <a class="btn" href="http://telegram.me/Kortout" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">Turism</a>
+      <a class="btn" href="http://telegram.me/kortourairticket" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">Airline Tickets</a>
+      <a class="btn" href="http://t.me/koreanmarke" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">Korean Market</a>
+      <a class="btn" href="http://t.me/uzsalang" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">우즈베키스탄 한인 24시</a>
+      <a class="btn" href="https://open.kakao.com/o/sCsLl5yf" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KakaoTalk_logo.svg">코아투어</a>
+      <a class="btn" href="https://www.instagram.com/kortour_uz/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">Korean Market</a>
+      <a class="btn" href="https://www.instagram.com/kortour_uz/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">KORTOUR</a>
+      <a class="btn" href="http://www.kortour.kr" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">한국어 코아투어 홈페이지</a>
+      <a class="btn" href="http://www.kortour.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">KORTOUR Uzbekistan Homepage</a>
+      <a class="btn" href="https://www.youtube.com/@tv-8113" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png">KORTOUR 유튜브</a>
+    </div>
+
+    <footer>
+      © 2025 KORTOUR. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
